@@ -1,0 +1,24 @@
+[
+    {
+        "username": "demoadmin",
+        "email": "demoadmin@gmail.com",
+        "password": "$2y$10$OgLhA\/7z6HMRD229h8uUzO.9oQAQk68NaT4UxI.fzCN4UcajGnE3e",
+        "id": 757950,
+        "role": "admin"
+    },
+    {
+        "username": "lyguqaxur",
+        "email": "jecizal@mailinator.com",
+        "password": "$2y$10$NpjCfNqw4hr3Z42VRLPCYe8rPRVWlezjsu3svtxLVaMQnTLIofnam",
+        "id": 212772,
+        "role": "user"
+    }
+    ,
+    {
+        "username": "lyguqaxur12",
+        "email": "jecizal1@mailinator.com",
+        "password": "$2y$10$NpjCfNqw4hr3Z42VRLPCYe8rPRVWlezjsu3svtxLVaMQnTLIofnam",
+        "id": 212773,
+        "role": "user"
+    }
+]

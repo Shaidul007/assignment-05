@@ -7,15 +7,19 @@ include "includes/header.php";
     header("Location: index.php", true, 301);
   }
 ?>
-
+<style>
+  body{
+    background-color: black;
+  }
+</style>
 <!-- Login form -->
 <section>
-  <div class="container">
+  <div class="container mt-5">
     <div class="row">
-      <div class="col-lg-6 offset-lg-3">
-        <div style="padding: 50px 0;" class="login-inner">
+      <div class="col-lg-4 offset-lg-4 dark:bg-gray-800 ">
+        <div style="padding: 50px 0; border:1px solid #444; border-radius: 10px; padding: 20px">
           <form method="POST" action="functions.php"
-            style="background-color: #f1f1f1; border-radius: 10px; padding: 20px;">
+            >
             <h1 class="text-center text-success mb-5">Sign in to our platform</h1>
             <!-- Show Error Message -->
             <?php
@@ -29,13 +33,13 @@ include "includes/header.php";
               ?>
 
             <div class="form-group mt-3">
-              <label for="email" class="form-label fw-bolder">Email</label>
+              <label for="email" class="form-label fw-bolder text-white">Email</label>
               <input name="email" placeholder="Enter Your Email" type="email" class="form-control" id="email"
                 aria-describedby="email">
             </div>
 
             <div class="form-group mt-3">
-              <label for="password" class="form-label fw-bolder">Password</label>
+              <label for="password" class="form-label fw-bolder text-white">Password</label>
               <input name="password" placeholder="Enter Your Password" type="password" class="form-control" id="password"
                 aria-describedby="password">
             </div>
@@ -44,29 +48,11 @@ include "includes/header.php";
               <button name="login" type="submit" class="btn btn-success me-2">Login</button>
               <a href="registration.php" class="btn btn-link">create an account</a>
             </div>
+            <div class="admin-info text-center text-white mt-3">
+        <p>Admin Email: demoadmin@gmail.com</p>
+        <p>Password: 12345678</p>
+        </div>
 
-
-            <!-- Create User Account Details Page -->
-            <div class="row mt-5">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">Admin</th>
-                    <th scope="col">Password</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>mainadmin@gmail.com</td>
-                    <td>12345678</td>
-                  </tr>
-                  <tr>
-                    <td>demouser@mail.com</td>
-                    <td>12345678</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
           </form>
         </div>
       </div>

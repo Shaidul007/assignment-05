@@ -13,11 +13,11 @@ include "includes/header.php";
 
 <section>
 <div class="container my-4">
-  <h1 class="display-4 text-primary text-center my-2">Welcome To Dashboard</h1>
+  <h1 class="display-4 text-success fw-semibold text-center my-2 mb-5">Admin Dashboard</h1>
   <div class="row">
-    <div class="col-md-10">
+    <div class="col-md-10 mx-auto">
       <div class="card">
-        <div class="card-header d-flex justify-content-between align-items-center">
+        <div class="card-header d-flex justify-content-between align-items-center bg-danger text-white">
           <h4 class="card-title">All User List</h4>
           <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Create User</a>
         </div>
@@ -25,11 +25,11 @@ include "includes/header.php";
           <table class="table">
             <thead>
               <tr>
-                <th scope="col">UserName</th>
+                <th scope="col">ID</th>
+                <th scope="col">User Name</th>
                 <th scope="col">Email</th>
                 <th scope="col">Role</th>
                 <th scope="col">Action</th>
-                <th scope="col">Update</th>
               </tr>
             </thead>
             <tbody>
@@ -101,6 +101,11 @@ include "includes/header.php";
           </div>
 
           <div class="form-group mt-3">
+                <label for="confirm_password" class="form-label fw-bolder">Confirm Password</label>
+                <input name="confirm_password" placeholder="Confirm Password" type="password" class="form-control" id="confirm_password" aria-describedby="password">
+              </div>
+
+          <div class="form-group mt-3">
             <label for="role" class="form-label fw-bolder">Select Role</label>
             <select class="form-select" name="role" id="role">
               <option selected disabled>Select Role</option>
@@ -111,7 +116,7 @@ include "includes/header.php";
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button name="createUser" type="submit" class="btn btn-primary">Submit</button>
+          <button name="createUser" type="submit" class="btn btn-success">Submit</button>
         </div>
       </form>
     </div>

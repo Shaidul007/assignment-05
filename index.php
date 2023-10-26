@@ -2,6 +2,11 @@
 include "functions.php";
 include "includes/header.php";
 ?>
+<style>
+  body{
+    background-color: black;
+  }
+</style>
 <nav class="navbar navbar-expand-lg bg-success">
   <div class="container">
     <a class="navbar-brand" href="#">HOME</a>
@@ -11,14 +16,20 @@ include "includes/header.php";
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item ">
-          <a class="nav-link active text-light" aria-current="page" href="#">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active text-light" aria-current="page" href="#">Github</a>
-        </li>
       </ul>
-    <?php
+
+    </div>
+  </div>
+</nav>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class=" text-success fw-semibold text-center mt-5">User Authentication and Role Management System</h1>
+        
+        <div class="buttton-section text-center my-5">
+        <?php
         if(isset($_SESSION["auth_id"])){
           if($_SESSION["auth_role"] == "admin"){
             echo "<a href='dashboard.php' class='btn btn-danger btn-md me-3'>Dashboard</a>";
@@ -26,11 +37,13 @@ include "includes/header.php";
           echo "<a href='?logout' class='btn btn-danger btn-md me-3'>Logout</a>";
         }else{
           echo "<a href='login.php' class='btn btn-danger btn-md me-3'>Login</a>";
-          echo "<a href='registration.php' class='btn btn-danger btn-md me-3'>egistration</a>";
+          echo "<a href='registration.php' class='btn btn-danger btn-md me-3'>Registration</a>";
         }
       ?>
+        </div>
+      </div>
     </div>
   </div>
-</nav>
+</section>
 
 <?php include __DIR__ ."/includes/footer.php" ?>

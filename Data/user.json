@@ -1,24 +1,36 @@
-[
-    {
+{
+    "0": {
         "username": "demoadmin",
         "email": "demoadmin@gmail.com",
         "password": "$2y$10$OgLhA\/7z6HMRD229h8uUzO.9oQAQk68NaT4UxI.fzCN4UcajGnE3e",
         "id": 757950,
         "role": "admin"
     },
-    {
-        "username": "lyguqaxur",
-        "email": "jecizal@mailinator.com",
-        "password": "$2y$10$NpjCfNqw4hr3Z42VRLPCYe8rPRVWlezjsu3svtxLVaMQnTLIofnam",
-        "id": 212772,
-        "role": "user"
+    "2": {
+        "username": "lajin",
+        "email": "ditihet@mailinator.com",
+        "password": "$2y$10$T1XG7QzEgbTr19P\/GAumyuTyv3suRbenjQcKFJVVE5Q71gRzhb3TK",
+        "confirm_password": "12345678",
+        "role": "user",
+        "createUser": "",
+        "id": 781525
+    },
+    "3": {
+        "username": "jyrigoma",
+        "email": "cujucedy@mailinator.com",
+        "password": "$2y$10$qCdyVWkBiASpX1o70UM.QeLI5n6kzBtoV1rvuEV5G22kjrQGwrfdK",
+        "confirm_password": "Pa$$w0rd!",
+        "role": "user",
+        "createUser": "",
+        "id": 995395
+    },
+    "4": {
+        "username": "Rony",
+        "email": "rony@mail.com",
+        "password": "$2y$10$SuCcRA2johQf3KDcNnoEjOlRLeLm0Eae\/t0Gp2\/mtL7th.\/dzbSHW",
+        "confirm_password": "123456",
+        "role": "user",
+        "createUser": "",
+        "id": 916229
     }
-    ,
-    {
-        "username": "lyguqaxur12",
-        "email": "jecizal1@mailinator.com",
-        "password": "$2y$10$NpjCfNqw4hr3Z42VRLPCYe8rPRVWlezjsu3svtxLVaMQnTLIofnam",
-        "id": 212773,
-        "role": "user"
-    }
-]
+}

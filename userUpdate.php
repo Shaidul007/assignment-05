@@ -7,9 +7,9 @@ if($_SESSION['auth_role'] != "admin")
     }
 
     // Get Single User Data
-    $data = file_get_contents('user.json');
+    $data = file_get_contents('./Data/user.json');
     $data = json_decode($data, true);
-    $user = array();
+    $user = [];
     foreach ($data as $key => $value) {
         if($value['id'] == $_GET['id']){
             $user = $value;
@@ -22,30 +22,30 @@ if($_SESSION['auth_role'] != "admin")
 
 <div class="container my-4">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-5 mx-auto">
             <div class="card">
-                <div class="card-header bg-primary d-flex justify-content-between align-items-center">
+                <div class="card-header bg-danger d-flex justify-content-between align-items-center">
                     <h4 class="card-title text-white">Edit User</h4>
                 </div>
-                <div class="card-body" style="background-color: #bdc3c7;">
+                <div class="card-body" style="background-color: black;">
                     <form action="functions.php" method="POST">
                         <input type="hidden" name="id" value="<?php echo $user['id'] ?>">
                         <div class="row d-flex justify-content-center">
-                            <div class="col-md-6">
+                            <div class="col-md-8">
                                 <div class="form-group mt-3">
-                                    <label for="username" class="form-label fw-bolder">User Name</label>
+                                    <label for="username" class="form-label fw-bolder text-white">User Name</label>
                                     <input name="username" placeholder="Enter User Name" type="text" class="form-control"
                                         id="username" aria-describedby="username" value="<?php echo $user['username'] ?>">
                                 </div>
 
                                 <div class="form-group mt-3">
-                                    <label for="email" class="form-label fw-bolder">Email</label>
+                                    <label for="email" class="form-label fw-bolder text-white">Email</label>
                                     <input name="email" placeholder="Enter Email" type="email" class="form-control"
                                         id="email" aria-describedby="email" value="<?php echo $user['email'] ?>">
                                 </div>
 
                                 <div class="form-group mt-3">
-                                    <label for="role" class="form-label fw-bolder">Select Role</label>
+                                    <label for="role" class="form-label fw-bolder text-white">Select Role</label>
                                     <select class="form-select" name="role" id="role">
                                         <option selected disabled>Select Role</option>
                                         <option value="admin" <?php echo $user['role'] == 'admin' ? 'selected' : '' ?> >Admin</option>
